@@ -1,8 +1,8 @@
-package com.substring.chat.chat_app_backend.controllers;
+package com.substring.chat.controllers;
 
-import com.substring.chat.chat_app_backend.entity.Message;
-import com.substring.chat.chat_app_backend.entity.Room;
-import com.substring.chat.chat_app_backend.repositories.RoomRepository;
+import com.substring.chat.entity.Message;
+import com.substring.chat.entity.Room;
+import com.substring.chat.repositories.RoomRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/rooms")
+@CrossOrigin("http://localhost:8080")
 public class RoomController {
 
     private RoomRepository roomRepository;

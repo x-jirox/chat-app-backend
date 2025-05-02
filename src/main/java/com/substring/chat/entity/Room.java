@@ -1,4 +1,4 @@
-package com.substring.chat.chat_app_backend.entity;
+package com.substring.chat.entity;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

@@ -1,6 +1,6 @@
-package com.substring.chat.chat_app_backend.repositories;
+package com.substring.chat.repositories;
 
-import com.substring.chat.chat_app_backend.entity.Room;
+import com.substring.chat.entity.Room;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface RoomRepository extends MongoRepository<Room, String> {

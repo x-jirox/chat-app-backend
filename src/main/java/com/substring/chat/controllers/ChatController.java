@@ -44,4 +44,13 @@ public class ChatController {
         return message;
 
     }
+
+    // Para manejar el evento de "escribiendo..."
+    @MessageMapping("/typing/{roomId}")
+    @SendTo("/topic/room/{roomId}/typing")
+    public String handleTyping(@DestinationVariable String roomId, @RequestBody String sender) {
+        return sender; // Enviar el nombre del usuario que está escribiendo
+    }
+
+
 }

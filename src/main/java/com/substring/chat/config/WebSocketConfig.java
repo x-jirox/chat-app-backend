@@ -23,7 +23,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat")//connection established
-                .setAllowedOrigins("http://localhost:8080")
+                .setAllowedOrigins("http://localhost:5173")
                 .withSockJS();
     }
     // /chat endpoint par conection apka establish
